@@ -1,0 +1,146 @@
+%% ****** Start of file rsitemplate.tex ****** %
+%%
+%%   This file has been edited from the original source file.
+%%	 The original file is part of the revtex4-1 package indicated below.
+%%   Version 4.1 of 9 October 2009.
+%%
+%
+% This is a template for producing documents for use with 
+% the REVTEX 4.1 document class and the RSI substyle.
+% 
+% Copy this file to another name and then work on that file.
+% That way, you always have this original template file to use.
+
+\documentclass[aip,rsi,reprint,graphicx]{revtex4-1} % for checking your page length
+%\\documentclass[aip,rsi,preprint,graphicx]{revtex4-1} % for review purposes
+
+
+\draft % marks overfull lines with a black rule on the right
+
+\begin{document}
+
+% Use the \preprint command to place your local institutional report number 
+% on the title page in preprint mode.
+% Multiple \preprint commands are allowed.
+%\preprint{}
+
+\title{Short-cycle fast temperature program gas chromatograph for SFC$\times$GC} %Title of paper
+
+% repeat the \author .. \affiliation  etc. as needed
+% \email, \thanks, \homepage, \altaffiliation all apply to the current author.
+% Explanatory text should go in the []'s, 
+% actual e-mail address or url should go in the {}'s for \email and \homepage.
+% Please use the appropriate macro for the type of information
+
+% \affiliation command applies to all authors since the last \affiliation command. 
+% The \affiliation command should follow the other information.
+
+\author{D Malan}
+\email[]{niel.malan@scidat.co.za}
+\homepage[]{www.scidat.co.za}
+%\thanks{}
+%\altaffiliation{}
+\affiliation{Department of Chemistry, University of Pretoria}
+
+\author{ER Rohwer}
+%\email[]{egmont.rohwer@up.ac.za}
+%\homepage[]{Your web page}
+%\thanks{}
+%\altaffiliation{}
+\affiliation{Department of Chemistry, University of Pretoria}
+
+
+% Collaboration name, if desired (requires use of superscriptaddress option in \documentclass). 
+% \noaffiliation is required (may also be used with the \author command).
+%\collaboration{}
+%\noaffiliation
+
+\date{\today}
+
+\begin{abstract}
+We present a fast chromatographic system that can be used as a second dimension in comprehensively coupled supercritical fluid chromatography/gas chromatography. The short (1 metre long) capillary column is heated by a coaxial stainless steel tube. The stainless steel tube is heated by an electrical current. The temperature of the stainless steel is measured by determing the resistance through the current/voltage ratio, calibrated to a fine-wire thermocouple probe inserted inside the tube. 
+\end{abstract}
+
+\pacs{}% insert suggested PACS numbers in braces on next line
+{82.80.Bg}
+\maketitle %\maketitle must follow title, authors, abstract and \pacs
+
+% Body of paper goes here. Use proper sectioning commands. 
+% References should be done using the \cite and \label commands
+\section{Introduction}
+%\label{}
+\subsection{}
+\subsubsection{}
+
+\section{Introduction}
+% Niel: Literature review
+
+The tremendous separating power of 
+
+The higher the orthogonality of a comprehensively coupled system, the bigger the general elution problem of the second (gas chromatography)dimension. Longer elution times lead to better separation, but also to flatter peaks, making quantitation harder. 
+
+Agilent has a 'low thermal mass' unit, which includes a heating wire and a sensing element bundled with the column. We presume that the sensing element works with the resistance. The unit cools down to the temperature of the oven.
+
+Zip Scientific uses a rather more brute-force technique. They connect a supply of chilled air to the GC oven to cool it down after each GC run, leaving the user free to use any conventional GC supplies to create their own method. 
+
+In previous work in our laboratories we used the cryogenic function of the Varian 3300 gas chromatograph to cool down the column at the beginning of each run. Each cooling run required 30 seconds to get back to temperature, using large quantities of coolant in the process. 
+
+\section{Experimental}
+
+\subsection{Hardware}
+The short-cycle fast gas chromatograph was built into a highly modified Varian 3300 gas chromatograph. The oven temperature control was disabled and none of the programming or data functions was used. The inlet and detector were under temperature control of the original electronics and instrument control system.
+
+The coaxial heater tube was mounted on a specially designed manifold. Electrical connections were silver soldered to the ferrules the sealed the tube to the manifold. These soldered/brazed joints helped to  
+
+\subsection{Electronics}
+
+\subsection{Software}
+
+\section{Results and Discussion}
+
+\section{Conclusion}
+\
+% If in two-column mode, this environment will change to single-column format so that long equations can be displayed. 
+% Use only when necessary.
+%\begin{widetext}
+%$$\mbox{put long equation here}$$
+%\end{widetext}
+
+% Figures should be put into the text as floats. 
+% Use the graphics or graphicx packages (distributed with LaTeX2e). EPSFig is no longer fully supported.
+% See the LaTeX Graphics Companion by Michel Goosens, Sebastian Rahtz, and Frank Mittelbach for examples. 
+%
+% Here is an example of the general form of a figure:
+% Fill in the caption in the braces of the \caption{} command. 
+% Put the label that you will use with \ref{} command in the braces of the \label{} command.
+%
+% \begin{figure}
+% \includegraphics{}% % Important NOTE: Please make certain your figures do not include local directory paths. ex. "c:\file\sub\fig1.eps"
+% \caption{\label{}}%
+% \end{figure}
+
+% Tables may be be put in the text as floats.
+% Here is an example of the general form of a table:
+% Fill in the caption in the braces of the \caption{} command. Put the label
+% that you will use with \ref{} command in the braces of the \label{} command.
+% Insert the column specifiers (l, r, c, d, etc.) in the empty braces of the
+% \begin{tabular}{} command.
+%
+% \begin{table}
+% \caption{\label{} }
+% \begin{tabular}{}
+% \end{tabular}
+% \end{table}
+
+% If you have acknowledgments, this puts in the proper section head.
+%\begin{acknowledgments}
+% Put your acknowledgments here.
+%\end{acknowledgments}
+
+% Create the reference section using BibTeX:
+\bibliography{your-bib-file}
+% Run this once to generate your BBL file. Then copy the contents of your BBL file into your main latex file, commenting out "\bibliography"
+
+\end{document}
+%
+% ****** End of file aiptemplate.tex ******
